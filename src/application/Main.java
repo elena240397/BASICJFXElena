@@ -24,16 +24,12 @@ public class Main extends Application {
 
 	private Pane mypane;
 	
-	/**
-	 * crea el Stage
-	 */
+	
 	
     @Override
     public void start(Stage stage) throws IOException {
     
-    	/**
-    	 * carga el controlador y la vista fxml 
-    	 */
+    	
     	
     	FXMLLoader loader = new FXMLLoader(
             getClass().getResource(
@@ -43,20 +39,15 @@ public class Main extends Application {
     	
         mypane = (Pane) loader.load();
 
-        /**
-         * titula y coloca la escena en el stage
-         */
-        stage.setTitle("Where's the squirrel?");
+       
+        stage.setTitle("The forest");
         stage.setScene(new Scene(mypane));
         stage.show();
     }
    
     
    
-    /**
-     * arranca la aplicaciÃ³n
-     * @param args
-     */
+    
     
     public static void main(String[] args) {
         launch(args);

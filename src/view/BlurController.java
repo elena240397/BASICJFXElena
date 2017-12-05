@@ -12,7 +12,7 @@ public class BlurController {
 	private Ellipse ellipse;
 	
 
-	
+	//recorte
 	@FXML
     public void setclip() {           
         ellipse = new Ellipse();
@@ -29,12 +29,12 @@ public class BlurController {
 	}
 
 
-
+//borrroso
 	@FXML
 	public void setblur() {
 		imageView.setEffect(new GaussianBlur(10));
 	}
-
+//cerrar
 	@FXML
 	public void hundlerClose() {
 		System.exit(0);
